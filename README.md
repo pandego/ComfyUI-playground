@@ -19,6 +19,7 @@ Follow these steps to clone the repository, set up the environment, and start us
 
    ```bash
    conda env create -f environment.yml
+   conda activate comfyui
    ```
 
 3. **Install Dependencies:**
@@ -34,7 +35,7 @@ Follow these steps to clone the repository, set up the environment, and start us
    Clone the ComfyUI repository directly into your playground:
 
    ```bash
-   git clone https://github.com/comfyanonymous/ComfyUI.git .
+   git clone https://github.com/comfyanonymous/ComfyUI.git
    ```
 
 5. **Install ComfyUI Manager and Additional Tools:**
@@ -42,7 +43,7 @@ Follow these steps to clone the repository, set up the environment, and start us
    Set up the custom nodes and additional tools:
 
    ```bash
-   cd custom_nodes/
+   cd ComfyUI/custom_nodes/
    git clone https://github.com/ltdrdata/ComfyUI-Manager.git
    cd ..
    ```
@@ -60,6 +61,16 @@ Follow these steps to clone the repository, set up the environment, and start us
    ```bash
    python main.py
    ```
+   
+7. **Optional - Copy the Workflows to the `default/` folder:**
+
+   There are a few Worflow examples in `workflows/` that you can copy to the ComfyUI's `default/` folder, like so:
+
+   ```bash
+   cp -r ../workflows/ user/default/
+   ```
+
+   They should now appear at the `default/`folder once you relaunch the ComfyUI.
 
 ## 📦 ComfyUI Manager and Additional Tools
 
